@@ -1,0 +1,1 @@
+web: gunicorn ekeycare.wsgi --log-file -

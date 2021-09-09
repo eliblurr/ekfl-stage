@@ -1,0 +1,2947 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /patients/{id}/{child}:
+    get:
+      operationId: retrievePatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: child
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients
+    post:
+      operationId: createPatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: child
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients
+    put:
+      operationId: updatePatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: child
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients
+    patch:
+      operationId: partialUpdatePatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: child
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients
+    delete:
+      operationId: destroyPatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: child
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - patients
+  /bills/{id}:
+    get:
+      operationId: retrieveBill
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - bills
+    post:
+      operationId: createBill
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - bills
+    put:
+      operationId: updateBill
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - bills
+    patch:
+      operationId: partialUpdateBill
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - bills
+    delete:
+      operationId: destroyBill
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - bills
+  /visits/{id}:
+    get:
+      operationId: retrieveVisit
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - visits
+    post:
+      operationId: createVisit
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - visits
+    put:
+      operationId: updateVisit
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - visits
+    patch:
+      operationId: partialUpdateVisit
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - visits
+    delete:
+      operationId: destroyVisit
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - visits
+  /patients/{id}:
+    get:
+      operationId: retrievePatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients
+    post:
+      operationId: createPatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients
+    put:
+      operationId: updatePatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients
+    patch:
+      operationId: partialUpdatePatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients
+    delete:
+      operationId: destroyPatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - patients
+  /doctors/{id}:
+    get:
+      operationId: retrieveClinician
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - doctors
+    post:
+      operationId: createClinician
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - doctors
+    put:
+      operationId: updateClinician
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - doctors
+    patch:
+      operationId: partialUpdateClinician
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - doctors
+    delete:
+      operationId: destroyClinician
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - doctors
+  /appointments/{id}:
+    get:
+      operationId: retrieveAppointment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - appointments
+    post:
+      operationId: createAppointment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - appointments
+    put:
+      operationId: updateAppointment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - appointments
+    patch:
+      operationId: partialUpdateAppointment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - appointments
+    delete:
+      operationId: destroyAppointment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - appointments
+  /chart-examination/{id}:
+    get:
+      operationId: retrieveChartExamination
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-examination
+    post:
+      operationId: createChartExamination
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-examination
+    put:
+      operationId: updateChartExamination
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-examination
+    patch:
+      operationId: partialUpdateChartExamination
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-examination
+    delete:
+      operationId: destroyChartExamination
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - chart-examination
+  /chart-eye-pressure/{id}:
+    get:
+      operationId: retrieveChartEyePressure
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-eye-pressure
+    post:
+      operationId: createChartEyePressure
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-eye-pressure
+    put:
+      operationId: updateChartEyePressure
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-eye-pressure
+    patch:
+      operationId: partialUpdateChartEyePressure
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-eye-pressure
+    delete:
+      operationId: destroyChartEyePressure
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - chart-eye-pressure
+  /character-refraction/{id}:
+    get:
+      operationId: retrieveChartRefraction
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - character-refraction
+    post:
+      operationId: createChartRefraction
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - character-refraction
+    put:
+      operationId: updateChartRefraction
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - character-refraction
+    patch:
+      operationId: partialUpdateChartRefraction
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - character-refraction
+    delete:
+      operationId: destroyChartRefraction
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - character-refraction
+  ? /bills{var}bills(/){var}bills(/)(:/{id}){var}bills(/)(:/{id})(:/{search}){var}bills(/)(:/{id})(:/{search})(:/{value}){var}bills(/)(:/{id})(:/{search})(:/{value})(:/{offset}){var}
+  : get:
+      operationId: retrieveBill
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - bills{var}bills(
+    post:
+      operationId: createBill
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - bills{var}bills(
+    put:
+      operationId: updateBill
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - bills{var}bills(
+    patch:
+      operationId: partialUpdateBill
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - bills{var}bills(
+    delete:
+      operationId: destroyBill
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - bills{var}bills(
+  ? /visits{var}visits(/){var}visits(/)(:/{id}){var}visits(/)(:/{id})(:/{search}){var}visits(/)(:/{id})(:/{search})(:/{value}){var}visits(/)(:/{id})(:/{search})(:/{value})(:/{offset}){var}
+  : get:
+      operationId: retrieveVisit
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - visits{var}visits(
+    post:
+      operationId: createVisit
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - visits{var}visits(
+    put:
+      operationId: updateVisit
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - visits{var}visits(
+    patch:
+      operationId: partialUpdateVisit
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - visits{var}visits(
+    delete:
+      operationId: destroyVisit
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - visits{var}visits(
+  ? /patients{var}patients(/){var}patients(/)(:/{id}){var}patients(/)(:/{id})(:/{search}){var}patients(/)(:/{id})(:/{search})(:/{value}){var}patients(/)(:/{id})(:/{search})(:/{value})(:/{offset}){var}
+  : get:
+      operationId: retrievePatient
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients{var}patients(
+    post:
+      operationId: createPatient
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients{var}patients(
+    put:
+      operationId: updatePatient
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients{var}patients(
+    patch:
+      operationId: partialUpdatePatient
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - patients{var}patients(
+    delete:
+      operationId: destroyPatient
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - patients{var}patients(
+  ? /doctors{var}doctors(/){var}doctors(/)(:/{id}){var}doctors(/)(:/{id})(:/{search}){var}doctors(/)(:/{id})(:/{search})(:/{value}){var}doctors(/)(:/{id})(:/{search})(:/{value})(:/{offset}){var}
+  : get:
+      operationId: retrieveClinician
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - doctors{var}doctors(
+    post:
+      operationId: createClinician
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - doctors{var}doctors(
+    put:
+      operationId: updateClinician
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - doctors{var}doctors(
+    patch:
+      operationId: partialUpdateClinician
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - doctors{var}doctors(
+    delete:
+      operationId: destroyClinician
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - doctors{var}doctors(
+  ? /appointments{var}appointments(/){var}appointments(/)(:/{id}){var}appointments(/)(:/{id})(:/{search}){var}appointments(/)(:/{id})(:/{search})(:/{value}){var}appointments(/)(:/{id})(:/{search})(:/{value})(:/{offset}){var}
+  : get:
+      operationId: retrieveAppointment
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - appointments{var}appointments(
+    post:
+      operationId: createAppointment
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - appointments{var}appointments(
+    put:
+      operationId: updateAppointment
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - appointments{var}appointments(
+    patch:
+      operationId: partialUpdateAppointment
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - appointments{var}appointments(
+    delete:
+      operationId: destroyAppointment
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - appointments{var}appointments(
+  ? /chart-examination{var}chart-examination(/){var}chart-examination(/)(:/{id}){var}chart-examination(/)(:/{id})(:/{search}){var}chart-examination(/)(:/{id})(:/{search})(:/{value}){var}chart-examination(/)(:/{id})(:/{search})(:/{value})(:/{offset}){var}
+  : get:
+      operationId: retrieveChartExamination
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-examination{var}chart-examination(
+    post:
+      operationId: createChartExamination
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-examination{var}chart-examination(
+    put:
+      operationId: updateChartExamination
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-examination{var}chart-examination(
+    patch:
+      operationId: partialUpdateChartExamination
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-examination{var}chart-examination(
+    delete:
+      operationId: destroyChartExamination
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - chart-examination{var}chart-examination(
+  ? /chart-eye-pressure{var}chart-eye-pressure(/){var}chart-eye-pressure(/)(:/{id}){var}chart-eye-pressure(/)(:/{id})(:/{search}){var}chart-eye-pressure(/)(:/{id})(:/{search})(:/{value}){var}chart-eye-pressure(/)(:/{id})(:/{search})(:/{value})(:/{offset}){var}
+  : get:
+      operationId: retrieveChartEyePressure
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-eye-pressure{var}chart-eye-pressure(
+    post:
+      operationId: createChartEyePressure
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-eye-pressure{var}chart-eye-pressure(
+    put:
+      operationId: updateChartEyePressure
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-eye-pressure{var}chart-eye-pressure(
+    patch:
+      operationId: partialUpdateChartEyePressure
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - chart-eye-pressure{var}chart-eye-pressure(
+    delete:
+      operationId: destroyChartEyePressure
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - chart-eye-pressure{var}chart-eye-pressure(
+  ? /character-refraction{var}character-refraction(/){var}character-refraction(/)(:/{id}){var}character-refraction(/)(:/{id})(:/{search}){var}character-refraction(/)(:/{id})(:/{search})(:/{value}){var}character-refraction(/)(:/{id})(:/{search})(:/{value})(:/{offset}){var}
+  : get:
+      operationId: retrieveChartRefraction
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - character-refraction{var}character-refraction(
+    post:
+      operationId: createChartRefraction
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - character-refraction{var}character-refraction(
+    put:
+      operationId: updateChartRefraction
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - character-refraction{var}character-refraction(
+    patch:
+      operationId: partialUpdateChartRefraction
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - character-refraction{var}character-refraction(
+    delete:
+      operationId: destroyChartRefraction
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: search
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: value
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: offset
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - character-refraction{var}character-refraction(
+  /authenticate{var}:
+    post:
+      operationId: createAuthToken
+      description: ''
+      parameters:
+      - name: var
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AuthToken'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AuthToken'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthToken'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthToken'
+          description: ''
+      tags:
+      - authenticate{var}
+components:
+  schemas:
+    AuthToken:
+      type: object
+      properties:
+        username:
+          type: string
+          writeOnly: true
+        password:
+          type: string
+          writeOnly: true
+        token:
+          type: string
+          readOnly: true
+      required:
+      - username
+      - password

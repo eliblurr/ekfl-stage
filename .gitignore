@@ -1,0 +1,13 @@
+*__pycache__*
+venv/
+migrations/*
+.history/
+*.pyc
+*.db
+*.log
+*.sqlite3
+__pycache__/
+.env
+*.png
+*.jpeg
+*.jpg
