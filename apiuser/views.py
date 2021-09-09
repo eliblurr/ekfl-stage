@@ -54,6 +54,8 @@ class UserLoginView(APIView):
 
                 'authenticatedUser': {
                     'email': serializer.data['email'],
+                    'first_name': serializer.data['first_name'],
+                    'last_name': serializer.data['last_name'],
                     'role': serializer.data['role']
                 }
             }
