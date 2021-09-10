@@ -28,6 +28,8 @@ class UserLoginSerializer(serializers.Serializer):
     access = serializers.CharField(read_only=True)
     refresh = serializers.CharField(read_only=True)
     role = serializers.CharField(read_only=True)
+    first_name = serializers.CharField(read_only=True)
+    last_name = serializers.CharField(read_only=True)
 
     def create(self, validated_date):
         pass
@@ -54,9 +56,9 @@ class UserLoginSerializer(serializers.Serializer):
                 'access': access_token,
                 'refresh': refresh_token,
                 'email': user.email,
-                # 'first_name': user.first_name,
-                # 'last_name': user.last_name,
-                #'full_name': user.get_full_name(),
+                'first_name': user.first_name,
+                'last_name': user.last_name,
+                # 'full_name': user.get_full_name(),
                 'role': user.role,
             }
 

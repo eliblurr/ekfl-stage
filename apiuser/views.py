@@ -43,6 +43,7 @@ class UserLoginView(APIView):
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
         valid = serializer.is_valid(raise_exception=True)
+        print(serializer.data)
         if valid:
             status_code = status.HTTP_200_OK
             response = {
@@ -54,8 +55,8 @@ class UserLoginView(APIView):
 
                 'authenticatedUser': {
                     'email': serializer.data['email'],
-                    # 'first_name': serializer.data['first_name'],
-                    # 'last_name': serializer.data['last_name'],
+                    'first_name': serializer.data['first_name'],
+                    'last_name': serializer.data['last_name'],
                     'role': serializer.data['role']
                 }
             }
