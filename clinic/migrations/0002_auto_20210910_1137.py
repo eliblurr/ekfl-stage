@@ -58,5 +58,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RunPython(seed_data),
+        # migrations.RunPython(seed_data),
     ]
